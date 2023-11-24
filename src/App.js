@@ -23,7 +23,7 @@ const App = () => {
         createUserDocumentFromAuth(user);
       }
       const pickedUser =
-        user && (({accessToken, email})=> ({accessToken, email})) (user);
+        user && (({accessToken, email})=> ({accessToken, email})) (user);  //This syntax is valid in JavaScript and is known as an Immediately Invoked Function Expression (IIFE). It creates an anonymous function that takes the user object as its argument, immediately invokes the function, and returns the result.
 
       console.log(setCurrentUser(pickedUser))
       dispatch(setCurrentUser(user));

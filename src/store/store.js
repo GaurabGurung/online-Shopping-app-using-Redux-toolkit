@@ -35,4 +35,4 @@ export const store = configureStore({
 });
 
 // export const persistor = persistStore(store);
-//redux toolkit uses redux thunk with non-serialized middleware value,as a default middleware
+//redux toolkit uses three types of middleware: redux thunk ,non-serialized middleware and immuatble middleware, as a default middleware
